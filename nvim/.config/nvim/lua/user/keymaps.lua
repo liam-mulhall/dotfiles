@@ -34,7 +34,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- file explorer
-keymap("n", "<Leader>e", "<Cmd>Lex 30<CR>", opts)
+keymap("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>", opts)
 
 -- column at 80 characters (cn = column narrow)
 keymap("n", "<Leader>cn", "<Cmd>set colorcolumn=80<CR>", opts)

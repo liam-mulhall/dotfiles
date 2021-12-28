@@ -88,7 +88,11 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring" -- comment based on context of cursor
 
   -- git
-  use "lewis6991/gitsigns.nvim"
+  use "lewis6991/gitsigns.nvim"                     -- shows additions, deletions, etc. on left of screen
+
+  -- nvim-tree
+  use "kyazdani42/nvim-web-devicons"                -- icons for nvimtree
+  use "kyazdani42/nvim-tree.lua"
 
   -- automatically set up your configuration after cloning packer.nvim
   -- put this at the end after all plugins
