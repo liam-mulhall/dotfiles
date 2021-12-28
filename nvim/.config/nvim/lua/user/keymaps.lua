@@ -36,6 +36,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- file explorer
 keymap("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>", opts)
 
+-- delete buffer
+keymap("n", "<Leader>bd", "<Cmd>Bdelete<CR>", opts)
+
 -- column at 80 characters (cn = column narrow)
 keymap("n", "<Leader>cn", "<Cmd>set colorcolumn=80<CR>", opts)
 
