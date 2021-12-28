@@ -87,6 +87,9 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"                        -- rainbow delimiters
   use "JoosepAlviste/nvim-ts-context-commentstring" -- comment based on context of cursor
 
+  -- git
+  use "lewis6991/gitsigns.nvim"
+
   -- automatically set up your configuration after cloning packer.nvim
   -- put this at the end after all plugins
   if PACKER_BOOTSTRAP then
