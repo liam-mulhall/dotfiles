@@ -1,0 +1,17 @@
+# intellij/webstorm
+.idea
+
+# mac
+.DS_Store
+
+# node
+node_modules
+npm_debug.log
+
+# vi/vim/nvim
+*.swp
+*~
+
+# visual studio code
+.vscode
+
