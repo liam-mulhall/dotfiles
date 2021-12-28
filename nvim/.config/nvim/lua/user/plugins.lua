@@ -41,47 +41,51 @@ packer.init {
 -- install your plugins here
 return packer.startup(function(use)
 
-  use "wbthomason/packer.nvim"          -- have packer manage itself
+  use "wbthomason/packer.nvim"                      -- have packer manage itself
 
   -- base plugins
-  use "nvim-lua/plenary.nvim"           -- useful lua functions used ny lots of plugins
-  use "nvim-lua/popup.nvim"             -- an implementation of the popup api from vim in neovim
+  use "nvim-lua/plenary.nvim"                       -- useful lua functions used ny lots of plugins
+  use "nvim-lua/popup.nvim"                         -- an implementation of the popup api from vim in neovim
 
   -- color schemes
-  use "folke/tokyonight.nvim"           -- nice dark color scheme (defaults to storm variant)
+  use "folke/tokyonight.nvim"                       -- nice dark color scheme (defaults to storm variant)
 
   -- cmp plugins
-  use "hrsh7th/nvim-cmp"                -- the completion plugin
-  use "hrsh7th/cmp-buffer"              -- buffer completions
-  use "hrsh7th/cmp-path"                -- path completions
-  use "hrsh7th/cmp-cmdline"             -- command line completions
-  use "saadparwaiz1/cmp_luasnip"        -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"            -- lsp completion
-  use "hrsh7th/cmp-nvim-lua"            -- lua completion
+  use "hrsh7th/nvim-cmp"                            -- the completion plugin
+  use "hrsh7th/cmp-buffer"                          -- buffer completions
+  use "hrsh7th/cmp-path"                            -- path completions
+  use "hrsh7th/cmp-cmdline"                         -- command line completions
+  use "saadparwaiz1/cmp_luasnip"                    -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"                        -- lsp completion
+  use "hrsh7th/cmp-nvim-lua"                        -- lua completion
 
   -- snippets
-  use "L3MON4D3/LuaSnip"                -- snippet engine
-  use "rafamadriz/friendly-snippets"    -- a bunch of snippets to use
+  use "L3MON4D3/LuaSnip"                            -- snippet engine
+  use "rafamadriz/friendly-snippets"                -- a bunch of snippets to use
 
   -- lsp
-  use "neovim/nvim-lspconfig"           -- enable lsp
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "neovim/nvim-lspconfig"                       -- enable lsp
+  use "williamboman/nvim-lsp-installer"             -- simple to use language server installer
 
   -- telescope
-  use "nvim-telescope/telescope.nvim"   -- file finder on the juice
+  use "nvim-telescope/telescope.nvim"               -- file finder on the juice
 
   -- smooth scrolling
   use {
-    "psliwka/vim-smoothie",             -- scroll movements like C-u and C-d are smooth
+    "psliwka/vim-smoothie",                         -- scroll movements like C-u and C-d are smooth
     config = vim.cmd [[ let g:smoothie_experimental_mappings = 1 ]]
   }
 
+  -- comments
+  use "numToStr/Comment.nvim"                       -- easily comment code
+
   -- treesitter and treesitter plugins
   use {
-    "nvim-treesitter/nvim-treesitter",  -- consistent syntax highlighting
+    "nvim-treesitter/nvim-treesitter",              -- consistent syntax highlighting
     run = ":TSUpdate",
   }
-  use "p00f/nvim-ts-rainbow"            -- rainbow delimiters
+  use "p00f/nvim-ts-rainbow"                        -- rainbow delimiters
+  use "JoosepAlviste/nvim-ts-context-commentstring" -- comment based on context of cursor
 
   -- automatically set up your configuration after cloning packer.nvim
   -- put this at the end after all plugins
