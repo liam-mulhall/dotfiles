@@ -5,12 +5,9 @@ if status is-interactive
 
 	# one-character aliases
 	alias c="clear"
-	alias e="nvim"
 	alias l="exa --all --git --icons --long --tree --level=1 ."
 	alias q="exit"
-
-	# four-character aliases
-	alias dots="git --git-dir=/Users/liam/.config/dotfiles/.git --work-tree=/Users/liam"
+  alias v="nvim"
 
 	# ssh aliases
 	alias elra="ssh limu0834@elra-01.cs.colorado.edu"
