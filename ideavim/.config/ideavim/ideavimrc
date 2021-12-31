@@ -1,0 +1,62 @@
+" notes
+" set webstorm to use zsh because it doesn't like fish
+" command-t now toggles the terminal window; it used to do something with git
+
+" useful webstorm stuff
+" :actionlist                - brings up comprehensive list of ide actions (press h for help)
+" :actionlist searchterm     - brings up list of ide actions related to "searchterm"
+" command-,                  - opens settings
+" command-f                  - search in file
+" command-shift-f            - search in broader scope
+" command-r                  - replace in file
+" command-shift-r            - replace in broader scope
+
+" commonly used
+" gD - go to declaration
+" gd - go to definition
+
+" stay in visual mode when indenting
+map < <gv
+map > >gv
+
+" space is leader
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
+" min number of lines above and below cursor
+set scrolloff=16
+
+"------------------------------------------------------------------------------
+" plugins
+"------------------------------------------------------------------------------
+
+" o	- open files, directories and bookmarks
+" m	- display the nerdtree menu
+" q	- close the nerdtree window
+" A	- zoom (maximize/minimize) the nerdtree window
+set NERDTree
+
+"------------------------------------------------------------------------------
+" shortcuts
+"------------------------------------------------------------------------------ 
+
+" save and format
+map :w <Action>(ReformatCode)<Action>(SaveAll)
+
+" go to next tab
+map L <Action>(NextTab)
+
+" go to previous tab
+map H <Action>(PreviousTab)
+
+" open file explorer
+map <leader>e :NERDTree<CR>
+
+" search everywhere
+map <leader>tg <Action>(SearchEverywhere)
+
+" search for a file
+map <leader>tf <Action>(GotoFile)
+
+" zen mode
+map <leader>z <Action>(ToggleDistractionFreeMode)
