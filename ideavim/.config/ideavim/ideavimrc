@@ -60,3 +60,4 @@ map <leader>tf <Action>(GotoFile)
 
 " zen mode
 map <leader>z <Action>(ToggleDistractionFreeMode)
+
