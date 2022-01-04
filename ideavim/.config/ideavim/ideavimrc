@@ -5,6 +5,7 @@
 " useful webstorm stuff
 " :actionlist                - brings up comprehensive list of ide actions (press h for help)
 " :actionlist searchterm     - brings up list of ide actions related to "searchterm"
+" shift-shift                - search everywhere
 " command-,                  - opens settings
 " command-f                  - search in file
 " command-shift-f            - search in broader scope
