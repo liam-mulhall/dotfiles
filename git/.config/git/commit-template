@@ -28,6 +28,7 @@ Subject                       50 CHARACTERS HERE ^
 * <scope> will vary from project to project. If you're working on a
   project that has a client and a server, it might make sense for a
   commit that changes the server code to have have a scope of server.
+  Optional.
 
 * <subject> should be capitalized as if it's an email header. It should
   be no longer than 50 characters. It should use the imperative,
@@ -38,10 +39,10 @@ Subject                       50 CHARACTERS HERE ^
   the change and contrast this with previous behavior. Focus on the
   "what" and the "why" as opposed to the "how". Hard wrap at 72
   characters. In Vi/Vim/Neovim, use `:set textwidth=72` (`:set tw=72`)
-  and `:set colorcolumn=72` (`:set cc=72`).
+  and `:set colorcolumn=72` (`:set cc=72`). Optional.
 
 * <footer> should include a reference to an issue, if there's a
-  relevant issue.
+  relevant issue. Optional.
 
 These rules are based on the following:
 * Conventional Commits
