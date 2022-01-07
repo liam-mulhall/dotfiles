@@ -6,6 +6,7 @@
 	editor = nvim
 [commit]
 	gpgsign = true
+	template = /Users/liam/.config/git/commit-template
 [gpg]
 	program = gpg
 [init]
