@@ -20,9 +20,16 @@ if status is-interactive
 	alias dvpn="/opt/cisco/anyconnect/bin/vpn disconnect"
 	alias svpn="/opt/cisco/anyconnect/bin/vpn status"
 
-	# path stuff
+	# python path stuff
 	fish_add_path /Users/liam/Library/Python/3.8/bin # macos
   fish_add_path /home/liam/.local/bin              # linux
+
+  # deno path stuff
+  # what we're supposed to do \/
+  # export DENO_INSTALL="/home/liam/.deno"
+  # export PATH="$DENO_INSTALL/bin:$PATH"
+  set DENO_INSTALL '/home/liam/.deno' # linux
+  fish_add_path /home/liam/.deno/bin  # linux
 
 end
 
