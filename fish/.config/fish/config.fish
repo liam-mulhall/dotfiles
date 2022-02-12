@@ -21,7 +21,8 @@ if status is-interactive
 	alias svpn="/opt/cisco/anyconnect/bin/vpn status"
 
 	# path stuff
-	fish_add_path /Users/liam/Library/Python/3.8/bin
+	fish_add_path /Users/liam/Library/Python/3.8/bin # macos
+  fish_add_path /home/liam/.local/bin              # linux
 
 end
 

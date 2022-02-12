@@ -1,6 +1,6 @@
 [user]
 	name = Liam Mulhall
-	email = mulhall.edward.liam@gmail.com
+	email = liam.mulhall@colorado.edu
 	signingkey = 1A3D80C5882823BB
 [core]
 	editor = nvim
