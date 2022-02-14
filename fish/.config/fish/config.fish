@@ -1,5 +1,8 @@
 if status is-interactive
 
+  # default editor
+  set -gx EDITOR nvim
+
 	# add vi key bindings to fish
 	fish_vi_key_bindings
 
