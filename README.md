@@ -58,3 +58,4 @@ Within the new `bar` directory, we simply pretend we are in the home directory.
 If we are in the root of the `.dotfiles` directory, we can issue the command
 `stow bar` to create symlinks for `bar` in the home directory.
 
+To delete a configuration, simply `rm` the file or directory you want to delete.
