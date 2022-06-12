@@ -1,6 +1,6 @@
 " notes
 " set webstorm to use zsh because it doesn't like fish
-" command-t now toggles the terminal window; it used to do something with git
+" use control-` to toggle terminal
 
 " useful webstorm stuff
 " :actionlist                - brings up comprehensive list of ide actions (press h for help)
