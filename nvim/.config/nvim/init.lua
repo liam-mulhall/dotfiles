@@ -5,7 +5,8 @@
 -- * https://github.com/nanotee/nvim-lua-guide.
 
 -- ## Inspect Value:
--- If you have version v0.7 you can inspect the value using the command lua =.
+-- If you have version v0.7 you can inspect the value using the command
+-- lua =.
 -- ```
 -- :lua = vim.opt.autoindent
 -- ```
@@ -61,8 +62,13 @@ vim.g.mapleader = ' '
 -- ## One-Letter Stuff
 vim.keymap.set('n', '<Leader>w', ':write<CR>')
 vim.keymap.set('n', '<Leader>q', ':quit!<CR>')
+vim.keymap.set('n', '<Leader>e', ':Vexplore<CR>')
+vim.keymap.set('n', '<Leader>t', ':terminal<CR>')
 
 -- ## Two-Letter Stuff
+
+-- ### Write and Quit
+vim.keymap.set('n', '<Leader>wq', ':wq<CR>')
 
 -- ### Toggles
 vim.keymap.set('n', '<Leader>tl', ':set list!<CR>')
@@ -71,6 +77,3 @@ vim.keymap.set('n', '<Leader>ts', ':set spell!<CR>')
 -- ### Git
 vim.keymap.set('n', '<Leader>gs', ':!git status<CR>')
 vim.keymap.set('n', '<Leader>gb', ':!git branch<CR>')
-vim.keymap.set('n', '<Leader>ga', ':!git add -A<CR>')
-vim.keymap.set('n', '<Leader>gc', ':!git commit<CR>')
-vim.keymap.set('n', '<Leader>gp', ':!git push<CR>')
